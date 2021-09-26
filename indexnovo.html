@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilonovo.css" media="">
+    <script src="./scriptnovo.js"></script>
+    <title>Itaú - Cadastro de Colaborador</title>
+</head>
+<body>
+    <div class="form">
+        <form name="formulario" method="post" action="index.php"><br>
+            <h1>Sistema de Colaborador Itaú Unibanco</h1>
+            <h2>Complete as informações</h2>
+            <label for="nome">Nome *</label>
+            <input type="text" size="40" id="idNome" placeholder="Nome Completo">
+            <label for="cpf"> &nbsp; &nbsp;CPF *</label>
+            <input type="text" id="idCpf" placeholder="xxx.xxx.xxx-xx"><br><br>
+            <label for="Email">E-mail Pessoal</label>
+            <input type="text" size="40" placeholder="e-mail válido">
+            <label for="rg"> &nbsp; &nbsp;RG</label>
+            <input type="text" placeholder="xx.xxx.xxx-x"><br><br>
+            
+            <label for="sex"><strong>Sexo</strong></label>
+            <select name="sex" id="sex">
+                <option selected disabled value="">Selecione</option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+           </select>
+
+            <label for="data"> &nbsp; &nbsp;Data de Nascimento</label>
+            <input type="date" name="data" id="data"><br><br>
+            <h2>Endereço</h2><br><br>
+            <label for="uf">Estado *</label>
+            <select id="uf">
+                <option selected disabled value="0">Escolha sua Região</option>
+                <optgroup label="Norte">
+                    <option value="1">Acre</option>
+                    <option value="2">Amazonas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Pará</option>
+                    <option value="5">Rondônia</option>
+                    <option value="6">Roraima</option>
+                    <option value="7">Tocantins</option>
+                </optgroup>    
+                <optgroup label="Nordeste">
+                    <option value="8">Alagoas</option>
+                    <option value="9">Bahia</option>
+                    <option value="10">Ceará</option>
+                    <option value="11">Maranhão</option>
+                    <option value="12">Piauí</option>
+                    <option value="13">Pernambuco</option>
+                    <option value="14">Paraíba</option>
+                    <option value="15">Rio Grande do Norte</option>
+                    <option value="16">Sergipe</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="17">Goiás</option>
+                    <option value="18">Mato Grosso</option>
+                    <option value="19">Mato Grosso do Sul</option>
+                    <option value="20">Distrito Federal</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="21">Espirito Santo</option>
+                    <option value="22">Minas Gerais</option>
+                    <option value="23">Rio de Janeiro</option>
+                    <option value="24">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="25">Paraná</option>
+                    <option value="26">Rio Grande do Sul</option>
+                    <option value="27">Santa Catarina</option>
+                </optgroup>
+            </select>     
+                <label for="cidade"> &nbsp; &nbsp; Cidade *</label>
+                <input type="text" id="idCidade"><br><br>
+                <label for="cep">CEP</label>
+                <input type="text" placeholder=" 21365-000">
+                <label for="bairro"> &nbsp; &nbsp; Bairro</label>
+                <input type="text"><br><br>
+                <label for="rua">Rua *</label>
+                <input type="text" id="idRua" size="30" placeholder=" logradouro">
+                <label for="nu"> &nbsp; &nbsp; Número *</label>
+                <input type="text" size="5" id="idNu"><br><br>
+                <label for="comp">Complemento</label>
+                <input type="text" size="30" placeholder="Andar, Apartamento, Bloco"><br><br>
+                <label for="celular">Celular *</label>
+                <input type="text" size="11" id="idCelular" placeholder=" (xx)xxxxx-xxxx">
+                <label for="telefone"> &nbsp; &nbsp; Telefone Fixo *</label>
+                <input type="text" size="11" id="idTelefone" placeholder=" (xx)xxxx-xxxx"><br><br><br>
+                <input type="button" onclick="Cadastrar()" id="botao" value="Enviar">
+                
+               
+        </form><br>
+
+        <small>* É obrigatório.</small>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <p>© 2021 Itaú Unibanco Holding S.A. CNPJ: 60.872.504/0001-23</p>
+            <p>Praça Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal, Parque Jabaquara - CEP 04344-902 - São Paulo - Brasil</p>
+        </div>
+    </footer>
+    
+</body><br><br>
+</html>
