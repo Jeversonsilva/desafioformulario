@@ -52,7 +52,7 @@ function Cadastrar () {
     }
 
     else if(telefone.value.length < 10) {
-        alert('Obrigatório informar o telefone residencial!!');
+        alert('Obrigatório informar o telefone fixo!!');
         telefone.focus();
         return false;
     }
